@@ -1,0 +1,32 @@
+.step {
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+
+  &__count {
+    background-color: #bea67d;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border: 3px solid rgba(0, 0, 0, 1);
+    box-shadow: 0 0 0 1px #bea67d;
+    margin-right: 25px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    color: #bea67d;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

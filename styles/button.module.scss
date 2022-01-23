@@ -1,0 +1,40 @@
+@import 'variables.scss';
+
+.button {
+  color: $color-white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: none;
+  transition: 0.25s;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &__small {
+    padding: 10px 30px;
+    font-size: 15px;
+    line-height: 41px;
+  }
+
+  &__big {
+    padding: 15px 50px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 51px;
+  }
+
+  &__orange {
+    background-color: $color-orange;
+    color: $color-white;
+
+    &-outline {
+      border: 1px solid $color-orange;
+      background: none;
+      color: $color-orange;
+
+      &:hover {
+        background: $color-orange;
+        color: $color-white;
+      }
+    }
+  }
+}

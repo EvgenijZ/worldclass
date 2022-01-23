@@ -1,0 +1,11 @@
+.attention {
+  text-align: center;
+  padding: 35px 25px;
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 0;
+    font-weight: bold;
+  }
+}

@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box; }
 
+html {
+  font-family: 'Montserrat', sans-serif; }
+
+.main {
+  margin: 80px auto 0 auto;
+  min-height: calc(100vh - 80px); }
 
 /*# sourceMappingURL=style.css.map */
