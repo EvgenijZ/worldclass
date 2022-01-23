@@ -11,7 +11,7 @@ export default function Timetable() {
           >
             Расписание отборочных этапов
           </h1>
-          <Tab boxed centered>
+          <Tab boxed centered margin>
             <TabItem active>
               <TabHead>1 этап</TabHead>
               <TabBody>
