@@ -1,3 +1,5 @@
+@import 'breakpoints.scss';
+
 .tab {
   $this: &;
 
@@ -27,6 +29,11 @@
   &__head {
     display: flex;
     width: 100%;
+    flex-direction: column;
+
+    @include min_width1200 {
+      flex-direction: row;
+    }
   }
 
   &__title {

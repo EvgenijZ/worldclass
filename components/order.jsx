@@ -37,7 +37,7 @@ const Order = () => {
         </div>
       </div>
       <Image
-        src='/static/images/order-bg.jpeg'
+        src='/static/images/order-bg-min.jpeg'
         alt='Worldclass logotype'
         layout='fill'
         className={order_style.order__bg}

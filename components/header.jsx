@@ -35,7 +35,7 @@ const Header = function() {
               </Link>
             </li>
             <li className={header_style.navigation__item}>
-              <Link href='/'>
+              <Link href='/hall'>
                 <a className={header_style.navigation__link}>Зал славы</a>
               </Link>
             </li>

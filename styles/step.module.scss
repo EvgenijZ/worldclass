@@ -1,7 +1,22 @@
+@import 'breakpoints.scss';
+
 .step {
+  margin-top: 40px;
+
+  @include min_width1200 {
+    margin-top: 0;
+  }
+
   &__item {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    @include min_width1200 {
+      flex-direction: row;
+      text-align: left;
+    }
 
     &:not(:first-child) {
       margin-top: 40px;
@@ -20,8 +35,12 @@
     font-weight: 500;
     border: 3px solid rgba(0, 0, 0, 1);
     box-shadow: 0 0 0 1px #bea67d;
-    margin-right: 25px;
     flex-shrink: 0;
+    margin-bottom: 10px;
+
+    @include min_width1200 {
+      margin: 0 25px 0 0;
+    }
   }
 
   &__text {

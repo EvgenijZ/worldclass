@@ -1,3 +1,5 @@
+@import 'breakpoints.scss';
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +9,10 @@ html {
 }
 
 .main {
-  margin: 80px auto 0 auto;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
+
+  @include min_width1200 {
+    margin: 80px auto 0 auto;
+    min-height: calc(100vh - 80px);
+  }
 }

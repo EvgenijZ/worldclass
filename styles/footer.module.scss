@@ -1,7 +1,13 @@
 @import 'variables.scss';
+@import 'breakpoints.scss';
 
 .footer {
   background-color: #171717;
+  text-align: center;
+
+  @include min_width1200 {
+    text-align: left;
+  }
 
   &__wrap {
     padding: 50px 25px;
@@ -10,6 +16,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+
+    @include min_width1200 {
+      flex-direction: row;
+    }
   }
 
   .company {
@@ -22,15 +33,29 @@
 
   .navigation {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include min_width1200 {
+      flex-direction: row;
+      width: initial;
+    }
 
     &__block {
       display: flex;
       flex-direction: column;
       flex-shrink: 0;
-      max-width: 220px;
+      margin-top: 50px;
+
+      @include min_width1200 {
+        max-width: 220px;
+        margin: 0;
+      }
 
       &:not(:last-child) {
-        margin-right: 50px;
+        @include min_width1200 {
+          margin-right: 50px;
+        }
       }
     }
 

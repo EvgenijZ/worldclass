@@ -1,3 +1,5 @@
+@import 'breakpoints.scss';
+
 .mb-1 {
 }
 .mb-2 {
@@ -23,11 +25,20 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    @include min_width1200 {
+      flex-direction: row;
+    }
   }
 
   &__col {
     flex: 1;
-    padding: 0 25px;
+    padding: 0;
+
+    @include min_width1200 {
+      padding: 0 25px;
+    }
   }
 
   &__content {

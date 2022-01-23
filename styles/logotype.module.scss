@@ -1,2 +1,11 @@
+@import 'breakpoints.scss';
+
 .logotype {
+  position: absolute;
+  top: 30px;
+
+  @include min_width1200 {
+    position: static;
+    top: initial;
+  }
 }

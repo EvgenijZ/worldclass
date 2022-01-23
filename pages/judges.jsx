@@ -16,7 +16,7 @@ export default function Judges() {
           <div className={judge_style.judges__item}>
             <div className={judge_style.judges__image}>
               <Image
-                src='/static/images/judges/judge1.jpeg'
+                src='/static/images/judges/judge1-min.jpeg'
                 alt='Judge person 1'
                 width='550'
                 height='366'
@@ -34,7 +34,7 @@ export default function Judges() {
           <div className={judge_style.judges__item}>
             <div className={judge_style.judges__image}>
               <Image
-                src='/static/images/judges/judge2.jpeg'
+                src='/static/images/judges/judge2-min.jpeg'
                 alt='Judge person 2'
                 width='550'
                 height='366'
@@ -55,7 +55,7 @@ export default function Judges() {
           <div className={judge_style.judges__item}>
             <div className={judge_style.judges__image}>
               <Image
-                src='/static/images/judges/judge3.jpeg'
+                src='/static/images/judges/judge3-min.jpeg'
                 alt='Judge person 3'
                 width='550'
                 height='550'
@@ -82,7 +82,7 @@ export default function Judges() {
           <div className={judge_style.judges__item}>
             <div className={judge_style.judges__image}>
               <Image
-                src='/static/images/judges/judge4.jpeg'
+                src='/static/images/judges/judge4-min.jpeg'
                 alt='Judge person 4'
                 width='550'
                 height='550'
