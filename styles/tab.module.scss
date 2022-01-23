@@ -1,6 +1,9 @@
 .tab {
-  margin-top: 30px;
   $this: &;
+
+  &--margin {
+    margin-top: 30px;
+  }
 
   &--boxed {
     max-width: 840px;

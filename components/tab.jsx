@@ -1,8 +1,8 @@
 import tab_style from '../styles/tab.module.scss';
 import React, { useState } from 'react';
 
-const Tab = ({ children, boxed, centered }) => {
-  if (children.props.children.length <= 2) {
+const Tab = ({ children, boxed, centered, margin }) => {
+  if (children.props && children.props.children.length <= 2) {
     console.error('In the <Tab/> component, must be at least two elements!');
     return null;
   } else {
@@ -30,6 +30,7 @@ const Tab = ({ children, boxed, centered }) => {
 
       if (boxed) styles += ` ${tab_style['tab--boxed']}`;
       if (centered) styles += ` ${tab_style['tab--centered']}`;
+      if (margin) styles += ` ${tab_style['tab--margin']}`;
 
       return styles;
     };
