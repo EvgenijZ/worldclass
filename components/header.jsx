@@ -30,7 +30,7 @@ const Header = function() {
         <nav className={header_style.navigation}>
           <ul className={header_style.navigation__list}>
             <li className={header_style.navigation__item}>
-              <Link href='/'>
+              <Link href='/brands'>
                 <a className={header_style.navigation__link}>Бренды</a>
               </Link>
             </li>
