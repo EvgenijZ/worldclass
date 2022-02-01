@@ -1,50 +1,53 @@
 @import 'breakpoints.scss';
 
 .judges {
-  margin-top: 50px;
+	margin-top: 50px;
 
-  &__item {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+	&__item {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 
-    @include min_width1200 {
-      flex-direction: row;
-    }
+		@include min_width1200 {
+			flex-direction: row;
+		}
 
-    &:not(:last-child) {
-      margin-bottom: 50px;
-    }
-  }
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+	}
 
-  &__image {
-    flex: 1;
-  }
+	&__image {
+		flex: 1;
+		text-align: center;
+	}
 
-  &__text {
-    flex: 1;
-    margin: 25px 0 0 0;
+	&__text {
+		flex: 1;
+		margin: 25px 0 0 0;
+		text-align: center;
 
-    @include min_width1200 {
-      margin: 0 0 0 50px;
-    }
-  }
+		@include min_width1200 {
+			margin: 0 0 0 50px;
+			text-align: left;
+		}
+	}
 
-  &__name {
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-bottom: 1px solid #cccccc;
-    padding-bottom: 10px;
-  }
+	&__name {
+		margin: 0;
+		text-transform: uppercase;
+		font-weight: 600;
+		border-bottom: 1px solid #cccccc;
+		padding-bottom: 10px;
+	}
 
-  &__description {
-    margin: 0;
-    line-height: 30px;
-    font-size: 15px;
+	&__description {
+		margin: 0;
+		line-height: 30px;
+		font-size: 15px;
 
-    &:not(:first-child) {
-      margin-top: 20px;
-    }
-  }
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
+	}
 }

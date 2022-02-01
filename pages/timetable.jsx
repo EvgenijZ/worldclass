@@ -1,99 +1,155 @@
 import page_style from '../styles/page.module.scss';
 import Tab, { TabItem, TabHead, TabBody } from '../components/tab';
+import Link from 'next/link';
 
 export default function Timetable() {
-  return (
-    <>
-      <div className={page_style.page}>
-        <div className={page_style.page__wrap}>
-          <h1
-            className={`${page_style.title} ${page_style['title--centered']} ${page_style['title--uppercase']}`}
-          >
-            Расписание отборочных этапов
-          </h1>
-          <Tab boxed centered margin>
-            <TabItem active>
-              <TabHead>1 этап</TabHead>
-              <TabBody>
-                <h2
-                  className={`${page_style.subtitle} ${page_style['subtitle--centered']} ${page_style['mb-5']}`}
-                >
-                  ПЕРВЫЙ ЭТАП. "BULLEIT: Finishing Moves" [21.01.2019 –
-                  18.03.2019]
-                </h2>
-                <div className={page_style.page__row}>
-                  <div className={page_style.page__col}>
-                    <div className={page_style.page__content}>
-                      <p>
-                        Задача первого этапа FINISHING MOVES - выразить с
-                        помощью авторского коктейля философию бренда
-                        американского виски Bulleit и его связь с деятельностью
-                        человека: искусством, музыкой, ремеслом и т.д. Подумайте
-                        о восприятии этого напитка, что именно привлекает вас,
-                        какие ассоциации возникают, когда о нём заходит речь?
-                      </p>
-                      <p>
-                        Ведь Bulleit, это не только виски. Что нравится вам? Что
-                        больше всего привлекает и задевает внутри? Что делает
-                        особенным вас или ваше заведение и что связывает с
-                        брендом Bulleit? Выразите это в подаче, аромате или во
-                        вкусе. Не стоит себя ограничивать, ведь Bulleit, это не
-                        о границах дозволенного, а о том, как их расширить или
-                        перешагнуть.
-                      </p>
-                      <p>
-                        Задача FINISHING MOVES создать коктейль, а при помощи
-                        финальных штрихов, о которых мы рассказываем в брифинге
-                        этапа, довести его до совершенства!
-                      </p>
-                    </div>
-                  </div>
-                  <div className={page_style.page__col}>
-                    <div className={page_style.page__content}>
-                      <p>
-                        <b>22 января</b> - БРИФИНГ первого этапа (Киев).
-                        Мастер-класс от международного спикера WORLD CLASS.
-                      </p>
-                      <p>
-                        <b>С 22 января по 18 февраля</b> – РЕГИСТРАЦИЯ на сайте
-                        www.worldclass.in.ua.
-                      </p>
-                      <p>
-                        Встречи с победителем World Class 2018 в 5 городах
-                        Украины.
-                      </p>
-                      <p>
-                        <b>До 23:59 18 февраля</b> – загрузка РЕЦЕПТУР.
-                      </p>
-                      <p>
-                        <b>С 18 февраля по 16 марта</b> – проверка наличия в
-                        баре конкурсного КОКТЕЙЛЯ, а также ОБЯЗАТЕЛЬНЫХ позиций
-                        резервного портфеля DIAGEO. ЦЕНКА рецептур.
-                      </p>
-                      <p>
-                        <b>18 марта</b> - подведение ИТОГОВ 1 этапа.
-                      </p>
-                      <p>
-                        <a className={page_style.link} href='#'>
-                          Детальные правила 1 этапа
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </TabBody>
-            </TabItem>
-            <TabItem>
-              <TabHead>2 этап</TabHead>
-              <TabBody>ЭТАП КОНТЕНТА2!!!</TabBody>
-            </TabItem>
-            <TabItem>
-              <TabHead>3 этап, ФИНАЛ</TabHead>
-              <TabBody>ЭТАП КОНТЕНТА3!!!</TabBody>
-            </TabItem>
-          </Tab>
-        </div>
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div className={page_style.page}>
+				<div className={page_style.page__wrap}>
+					<h1
+						className={`${page_style.title} ${page_style['title--centered']} ${page_style['title--uppercase']}`}
+					>
+						РОЗКЛАД ВІДБІРНИХ ЕТАПІВ
+					</h1>
+					<Tab boxed centered margin>
+						<TabItem active>
+							<TabHead>1 етап</TabHead>
+							<TabBody>
+								<h2
+									className={`${page_style.subtitle} ${page_style['subtitle--centered']} ${page_style['mb-5']}`}
+								>
+									1 етап (07.02.22-01.04.22)
+								</h2>
+								<div className={page_style.page__row}>
+									<div className={page_style.page__col}>
+										<div className={page_style.page__content}>
+											<p>
+												Оберіть одне з двох завдань для виконання: ОПОВІДАЧ або
+												ДІАЛЕКТИКА ДРАМУ
+											</p>
+											<p>
+												<b>ОПОВІДАЧ</b>
+											</p>
+											<p>
+												Мало що може бути краще за склянку шотландського віскі.
+												З ним зрівняється хіба що чудова історія, якою поділився
+												з друзями. І справді, Шотландія, її історія та її люди
+												всесвітньо відомі тим, що розповідають свої історії і є
+												в самому серці багатьох легендарних оповідок.
+											</p>
+											<p>
+												Ми хочемо, щоб ви створили «історичний» коктейль на
+												основі Talisker або Singleton, натхненний одним із 4
+												відомих шотландських діячів або 4 історичними пам’ятками
+												Шотландії.
+											</p>
+											<p>
+												Повні умови завдання за посиланням:
+												<br />
+												<Link href='https://drive.google.com/file/d/1I1MGkqaEDf7U_ItJtGZO9YUagoHniDTn/view?usp=sharing'>
+													<a className={page_style.link} target='_blank'>
+														https://drive.google.com/file/d/1I1MGkqaEDf7U_ItJtGZO9YUagoHniDTn/view?usp=sharing
+													</a>
+												</Link>
+											</p>
+											<p>
+												<b>ДІАЛЕКТИКА ДРАМУ</b>
+											</p>
+											<p>
+												Коли ви подорожуєте, навігація по мережі дивацтв, правил
+												і культурних звичаїв у незнайомому місці може бути
+												незрозумілою. Однак, як тільки ви дізнаєтеся про те, як
+												все влаштовано, маленькі місцеві дивацтва, які спочатку
+												такі страшні, незабаром починають викликати прихильність
+												і пропонують мандрівникам глибше розуміння того чи
+												іншого місця.
+											</p>
+											<p>
+												Саме це знання, що історію місця можна розповісти за
+												допомогою його ритуалів, надихнуло на цей виклик. Ми б
+												хотіли, щоб ви придумали новий коктейль Talisker або
+												Singleton, натхненний одним із ваших місцевих ритуалів,
+												або ритуалом, про який ви дізналися під час подорожі і
+												який запам’ятали.
+											</p>
+											<p>
+												Повні умови завдання за посиланням:
+												<br />
+												<Link href='https://drive.google.com/file/d/1-0fJQMObQbff4caPqGgOW8QKeS6rEpDn/view?usp=sharing'>
+													<a className={page_style.link} target='_blank'>
+														https://drive.google.com/file/d/1-0fJQMObQbff4caPqGgOW8QKeS6rEpDn/view?usp=sharing
+													</a>
+												</Link>
+											</p>
+										</div>
+									</div>
+									<div className={page_style.page__col}>
+										<div className={page_style.page__content}>
+											<p>
+												<b>До 07 березня</b> – РЕЄСТРАЦІЯ через бот
+												<br />
+												<Link href='https://t.me/WorldClassUkraine2022_bot?start=ZGw6NzY0NjY'>
+													<a className={page_style.link} target='_blank'>
+														https://t.me/WorldClassUkraine2022_bot?start=ZGw6NzY0NjY
+													</a>
+												</Link>
+											</p>
+											<p>
+												<b>До 23:59 07 березня</b> – завантаження РЕЦЕПТУР та
+												ФОТО через бот З 08 березня по 27 березня – ОЦІНКА
+												рецептур
+											</p>
+											<p>
+												<b>10 березня</b> - ТЕСТ на знання брендів 01 квітня -
+												підведення ПІДСУМКІВ 1 етапу. Оголошення ТОП 10
+											</p>
+
+											<p>
+												<Link href='/rules1.docx'>
+													<a className={page_style.link} download>
+														Правила 1 етапу
+													</a>
+												</Link>
+											</p>
+										</div>
+									</div>
+								</div>
+							</TabBody>
+						</TabItem>
+						<TabItem>
+							<TabHead>2 етап</TabHead>
+							<TabBody>
+								<h2
+									className={`${page_style.subtitle} ${page_style['subtitle--centered']} ${page_style['mb-5']}`}
+								>
+									2 етап (18.04.22-19.04.22)
+								</h2>
+								<div className={page_style.page__row}>
+									<div className={page_style.page__content}>
+										<p>Офлайн-брифінг для ТОП-10 INFORMATION TBA</p>
+									</div>
+								</div>
+							</TabBody>
+						</TabItem>
+						<TabItem>
+							<TabHead>3 етап, (фінал)</TabHead>
+							<TabBody>
+								<h2
+									className={`${page_style.subtitle} ${page_style['subtitle--centered']} ${page_style['mb-5']}`}
+								>
+									3 етап (25.05.22-26.05.22)
+								</h2>
+								<div className={page_style.page__row}>
+									<div className={page_style.page__content}>
+										<p>ФІНАЛ INFORMATION TBA</p>
+									</div>
+								</div>
+							</TabBody>
+						</TabItem>
+					</Tab>
+				</div>
+			</div>
+		</>
+	);
 }
