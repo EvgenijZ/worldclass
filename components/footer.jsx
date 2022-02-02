@@ -1,5 +1,6 @@
 import footer_style from '../styles/footer.module.scss';
 import Logotype from './logotype';
+import Link from 'next/link';
 
 const Footer = function () {
 	return (
@@ -17,7 +18,7 @@ const Footer = function () {
 				</div>
 				<nav className={footer_style.navigation}>
 					<div className={footer_style.navigation__block}>
-						<div className={footer_style.navigation__title}>Следи за нами</div>
+						<div className={footer_style.navigation__title}>Стеж за нами</div>
 						<ul className={footer_style.navigation__list}>
 							<li className={footer_style.navigation__item}>
 								<a className={footer_style.navigation__link} href='#'>
@@ -44,17 +45,19 @@ const Footer = function () {
 
 					<div className={footer_style.navigation__block}>
 						<div className={footer_style.navigation__title}>
-							Полезные ссылки
+							Корисні посилання
 						</div>
 						<ul className={footer_style.navigation__list}>
 							<li className={footer_style.navigation__item}>
-								<a className={footer_style.navigation__link} href='#'>
-									Правила конкурса
-								</a>
+								<Link href='/rules.docx'>
+									<a className={footer_style.navigation__link} download>
+										Правила конкурсу
+									</a>
+								</Link>
 							</li>
 							<li className={footer_style.navigation__item}>
 								<a className={footer_style.navigation__link} href='#'>
-									Политика конфиденциальности
+									Політика конфіденційності
 								</a>
 							</li>
 						</ul>
