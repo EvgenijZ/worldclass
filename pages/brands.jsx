@@ -199,6 +199,21 @@ export default function Brands() {
 								</div>
 							</TabBody>
 						</TabItem>
+						<TabItem>
+							<TabHead>Джин</TabHead>
+							<TabBody>
+								<div className={brands_style.brands__list}>
+									<div className={brands_style.brands__item}>
+										<Image
+											src='/static/images/brands/brand9.svg'
+											alt='Brand 5'
+											width='160'
+											height='160'
+										/>
+									</div>
+								</div>
+							</TabBody>
+						</TabItem>
 					</Tab>
 				</div>
 			</div>

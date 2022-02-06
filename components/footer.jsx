@@ -13,7 +13,7 @@ const Footer = function () {
 						height='28'
 					/>
 					<p className={footer_style.company__copyright}>
-						ООО &quot;Баядера Логистик&quot;
+						ТОВ &quot;Баядера Логістик&quot;
 					</p>
 				</div>
 				<nav className={footer_style.navigation}>
